@@ -8,6 +8,10 @@ Router.configure({
 });
 
 Router.route('/', {
+  name: 'landing'
+});
+
+Router.route('/posts', {
   name: 'postsList' //this is technically just route name
   // but router will infer templateName from this
   // unless it's explicitly set
@@ -23,8 +27,8 @@ Router.route('/posts/:_id',{
   }
 });
 
-Router.route('/submit/', {
-  name: 'postSubmit'
+Router.route('/submit', {
+  name: 'postSubmit',
 });
 
 var requireLogin = function () {

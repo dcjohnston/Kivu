@@ -2,8 +2,9 @@ Template.postSubmit.events({
   'submit form': function(e){
     e.preventDefault();
     var post = {
-      url: $(e.target).find('[name=url]').val(),
-      title: $(e.target).find('[name=title]').val()
+      jStability: $(e.target).find('[name=jStability]').val(),
+      anxiety: $(e.target).find('[name=anxiety]').val(),
+      energy: $(e.target).find('[name=energy]').val()
     };
 
     //invoke meteor method from client side
@@ -11,8 +12,10 @@ Template.postSubmit.events({
       if (e){
         throw e;
       }
+      if (res.postExists){
+        alert('This link already has been posted');
+      }
       Router.go("postPage", {_id: res._id});
-    });
-    
+    });    
   }
 });
