@@ -9,11 +9,9 @@ MainLayout = React.createClass({
   render() {
     return (
       <AppCanvas>
-        <Grid>
-          {this.props.header}
-          {this.props.content}
-          {this.props.footer}
-        </Grid>
+        {this.props.header}
+        {this.props.content}
+        {this.props.footer}
       </AppCanvas>
     );
   }
