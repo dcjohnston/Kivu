@@ -2,7 +2,6 @@ injectTapEventPlugin();
 
 var {AppCanvas, Styles} = MUI;
 var {ThemeManager, LightRawTheme} = Styles;
-var {Grid} = ReactBootstrap;
 
 MainLayout = React.createClass({
 

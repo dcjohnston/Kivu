@@ -1,5 +1,4 @@
 var {Slider, Paper, DatePicker} = MUI;
-var {Grid, Col, Row} = ReactBootstrap;
 
 SubmissionForm = React.createClass({
   render() {

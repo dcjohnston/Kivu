@@ -1,13 +1,8 @@
-var {Grid, Row, Col} = ReactBootstrap;
-
 UserDash = React.createClass({
 
   render() {
     return (
-      <Grid fluid={true}>
-        <Row>
-        </Row>
-      </Grid>
+      <div> User dashboard</div>
     );
   }
 });
